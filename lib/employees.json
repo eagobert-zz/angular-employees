@@ -1,0 +1,34 @@
+{
+    "employees": [
+        {
+            "firstName": "Erin",
+            "lastName": "Orstrom",
+            "employmentStart": 1512140013765,
+            "employmentEnd": 0
+        },
+        {
+            "firstName": "Wayne",
+            "lastName": "Hutchinson",
+            "employmentStart": 1512139999102,
+            "employmentEnd": 0
+        },
+        {
+            "firstName": "Sarah",
+            "lastName": "Story",
+            "employmentStart": 1512139999729,
+            "employmentEnd": 0
+        },
+        {
+            "firstName": "Sulaiman",
+            "lastName": "Allan",
+            "employmentStart": 1512140294571,
+            "employmentEnd": 0
+        },
+        {
+            "firstName": "Ben",
+            "lastName": "Marks",
+            "employmentStart": 1512200192934,
+            "employmentEnd": 0
+        }
+    ]
+}

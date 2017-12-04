@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angular Employees</title>
+</head>
+
+<!-- Bind the EmployeeMgmt app to the body element -->
+<body ng-app="EmployeeMgmt">
+
+    <!-- Bind the EmployeeCtrl controller -->
+    <section ng-controller="EmployeeCtrl">
+        <h1>{{title}}</h1>
+        <div>
+            First Name: <input type="text" ng-model="newEmployee.firstName">
+            Last Name: <input type="text" ng-model="newEmployee.lastName"> <button ng-click="addNewEmployee()">Hire</button>
+        </div>
+        <div>
+            <ul ng-repeat="(key, employee) in employees">
+                <li ng-if = "employee.employmentEnd === 0">{{employee.firstName}} {{employee.lastName}} <button ng-click="fireEmployee(employee, key)">Fire</button></li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- Scripts -->
+    <script src="lib/node_modules/angular/angular.min.js"></script>
+    <script src="./app/EmployeeCtrl.js"></script>
+</body>
+</html>
