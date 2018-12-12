@@ -1,12 +1,16 @@
 {
   "name": "lib",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Demo AngularJS application",
+  "main": "EmployeeCtrl.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:eagobert/angular-employees.git"
+  },
+  "author": "Erin Agobert",
   "license": "MIT",
   "dependencies": {
     "angular": "^1.6.7",

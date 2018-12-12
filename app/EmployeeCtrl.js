@@ -5,7 +5,7 @@ var app = angular.module("EmployeeMgmt", []);
 app.controller("EmployeeCtrl", function ($scope, $http) {
 
     $scope.title = "Employee Listing"
-    $scope.newEmployee = {} //why did I have to declare a new object??
+    $scope.newEmployee = {}
 
     //Display current employees on the website...
     $http
@@ -14,9 +14,10 @@ app.controller("EmployeeCtrl", function ($scope, $http) {
         $scope.employees = response.data
     })
 
+    //Define what is stored in a new employee object
     $scope.addNewEmployee = function(){
         $http.post("https://employees-cb616.firebaseio.com/employees/.json", {
-            "firstName":$scope.newEmployee.firstName, //why did I have to create a new object to pass this to??
+            "firstName":$scope.newEmployee.firstName,
             "lastName": $scope.newEmployee.lastName,
             "employmentStart": Date.now(),
             "employmentEnd": 0
