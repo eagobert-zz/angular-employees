@@ -4,7 +4,7 @@ Angular - Employees
 
 ## Description
 
-The purpose of this application is to demonstrate AngularJS.  A snapshot, this application allows the user to add and remove employees from a Google Firebase database.  The application also allows the 
+The purpose of this application is to demonstrate AngularJS.  A snapshot, this application allows the user to add and remove employees from a Google Firebase database.  The application also displays a list of all current employees.
 
 ### Installing
 
